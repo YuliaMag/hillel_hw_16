@@ -19,8 +19,10 @@ class Timer:
         self.reset_time = time.time()
         self.elapsed_time = 0
 
-    def elapsed_time(self):
-        if self.reset_time:
-            return self.elapsed_time + (time.time() - self.reset_time)
-        else:
-            return self.elapsed_time
+
+# redundant code
+    # def elapse(self):  # I named the method the same as the variable
+    #     if self.reset_time:
+    #         return self.elapsed_time + (time.time() - self.reset_time)
+    #     else:
+    #         return self.elapsed_time
