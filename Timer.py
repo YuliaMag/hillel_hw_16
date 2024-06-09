@@ -11,7 +11,7 @@ class Timer:
         self.start_time = time.time()
         return self
 
-    def __exit__(self, type, value, traceback):
+    def __exit__(self, type_, value, traceback):
         self.end_time = time.time()
         self.elapsed_time += self.end_time - self.start_time
 
